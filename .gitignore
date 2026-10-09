@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+work/
+private*/
+reports/
+conversations.json
+normalized.json
+audit.json
+stats.json
+timeline.json
+report.md

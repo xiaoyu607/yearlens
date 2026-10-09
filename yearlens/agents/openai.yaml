@@ -1,0 +1,4 @@
+interface:
+  display_name: "YearLens — AI 年度回忆录"
+  short_description: "将用户导出的聊天记录整理为有证据的年度统计与月度回顾"
+  default_prompt: "使用 $yearlens 分析我提供的 ChatGPT 导出文件，生成指定年份的统计和带原文证据的月度回顾。"

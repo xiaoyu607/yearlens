@@ -1,0 +1,548 @@
+[
+  {
+    "id": "synthetic-learning",
+    "title": "【纯虚构样例】学习计划与小进展",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "learn-u1"
+        ],
+        "message": null
+      },
+      "learn-u1": {
+        "id": "learn-u1",
+        "parent": "root",
+        "children": [
+          "learn-a1"
+        ],
+        "message": {
+          "id": "learn-u1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2024-12-31T17:30:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "这是虚构演示：我想开始学画画，每周练习两次。"
+            ]
+          }
+        }
+      },
+      "learn-a1": {
+        "id": "learn-a1",
+        "parent": "learn-u1",
+        "children": [
+          "learn-u2"
+        ],
+        "message": {
+          "id": "learn-a1",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-01-01T02:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "可以从简单的观察练习开始。"
+            ]
+          }
+        }
+      },
+      "learn-u2": {
+        "id": "learn-u2",
+        "parent": "learn-a1",
+        "children": [
+          "learn-a2"
+        ],
+        "message": {
+          "id": "learn-u2",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-02-04T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "这个月完成了三张练习画，但还没有养成每周练习的习惯。"
+            ]
+          }
+        }
+      },
+      "learn-a2": {
+        "id": "learn-a2",
+        "parent": "learn-u2",
+        "children": [],
+        "message": {
+          "id": "learn-a2",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-02-04T08:01:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "可以缩小每次练习的目标。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": "learn-a2"
+  },
+  {
+    "id": "synthetic-home",
+    "title": "【纯虚构样例】回顾过去与当前生活",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "home-u1"
+        ],
+        "message": null
+      },
+      "home-u1": {
+        "id": "home-u1",
+        "parent": "root",
+        "children": [
+          "home-old",
+          "home-a1"
+        ],
+        "message": {
+          "id": "home-u1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-05-10T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "我上周搬到了一个新住处，今天终于整理好了书桌。"
+            ]
+          }
+        }
+      },
+      "home-old": {
+        "id": "home-old",
+        "parent": "home-u1",
+        "children": [],
+        "message": {
+          "id": "home-old",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-05-10T08:01:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "这是被替换的回复，不应计入当前分支。"
+            ]
+          }
+        }
+      },
+      "home-a1": {
+        "id": "home-a1",
+        "parent": "home-u1",
+        "children": [
+          "home-u2"
+        ],
+        "message": {
+          "id": "home-a1",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-05-10T08:02:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "新的书桌是什么样的？"
+            ]
+          }
+        }
+      },
+      "home-u2": {
+        "id": "home-u2",
+        "parent": "home-a1",
+        "children": [
+          "home-a2"
+        ],
+        "message": {
+          "id": "home-u2",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-06-03T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "去年 12 月曾经想过换城市，但当时没有搬。这次仍在原来的城市。"
+            ]
+          }
+        }
+      },
+      "home-a2": {
+        "id": "home-a2",
+        "parent": "home-u2",
+        "children": [],
+        "message": {
+          "id": "home-a2",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-06-03T08:01:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "感谢你补充时间线。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": "home-a2"
+  },
+  {
+    "id": "synthetic-plans",
+    "title": "【纯虚构样例】计划不是已发生事件",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "plan-u"
+        ],
+        "message": null
+      },
+      "plan-u": {
+        "id": "plan-u",
+        "parent": "root",
+        "children": [
+          "plan-a"
+        ],
+        "message": {
+          "id": "plan-u",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-09-12T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "如果明年换工作，我想找更灵活的安排。目前还没有辞职。"
+            ]
+          }
+        }
+      },
+      "plan-a": {
+        "id": "plan-a",
+        "parent": "plan-u",
+        "children": [],
+        "message": {
+          "id": "plan-a",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-09-12T08:01:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "可以先列出你重视的条件。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": "plan-a"
+  },
+  {
+    "id": "synthetic-year-end",
+    "title": "【纯虚构样例】跨年会话",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "end-u"
+        ],
+        "message": null
+      },
+      "end-u": {
+        "id": "end-u",
+        "parent": "root",
+        "children": [
+          "end-a"
+        ],
+        "message": {
+          "id": "end-u",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-12-31T16:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "今年我仍在尝试建立画画的习惯，想在明年继续。"
+            ]
+          }
+        }
+      },
+      "end-a": {
+        "id": "end-a",
+        "parent": "end-u",
+        "children": [],
+        "message": {
+          "id": "end-a",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-12-31T17:30:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "明年可以定一个小目标。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": "end-a"
+  },
+  {
+    "id": "synthetic-attachment",
+    "title": "【纯虚构样例】不可读取的附件",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "image-u"
+        ],
+        "message": null
+      },
+      "image-u": {
+        "id": "image-u",
+        "parent": "root",
+        "children": [
+          "image-a"
+        ],
+        "message": {
+          "id": "image-u",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-07-02T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "multimodal_text",
+            "parts": [
+              {
+                "content_type": "image_asset_pointer",
+                "asset_pointer": "synthetic-image-never-fetched"
+              }
+            ]
+          }
+        }
+      },
+      "image-a": {
+        "id": "image-a",
+        "parent": "image-u",
+        "children": [],
+        "message": {
+          "id": "image-a",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-07-02T08:01:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "仅演示附件消息的计数。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": "image-a"
+  },
+  {
+    "id": "synthetic-undated",
+    "title": "【纯虚构样例】无日期消息",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "undated-u"
+        ],
+        "message": null
+      },
+      "undated-u": {
+        "id": "undated-u",
+        "parent": "root",
+        "children": [],
+        "message": {
+          "id": "undated-u",
+          "author": {
+            "role": "user"
+          },
+          "create_time": null,
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "这条不能归入任何年份。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": "undated-u"
+  },
+  {
+    "id": "synthetic-ambiguous",
+    "title": "【纯虚构样例】缺少当前分支",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "branch-x",
+          "branch-y"
+        ],
+        "message": null
+      },
+      "branch-x": {
+        "id": "branch-x",
+        "parent": "root",
+        "children": [],
+        "message": {
+          "id": "branch-x",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-03-04T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "第一种写法。"
+            ]
+          }
+        }
+      },
+      "branch-y": {
+        "id": "branch-y",
+        "parent": "root",
+        "children": [],
+        "message": {
+          "id": "branch-y",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-03-04T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "修改后的写法。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": null
+  },
+  {
+    "id": "synthetic-fiction",
+    "title": "【纯虚构样例】创作素材不是本人经历",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": [
+          "story-u"
+        ],
+        "message": null
+      },
+      "story-u": {
+        "id": "story-u",
+        "parent": "root",
+        "children": [
+          "story-tool"
+        ],
+        "message": {
+          "id": "story-u",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-08-02T08:00:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "帮我写一段小说：主角辞职去旅行。这个主角不是我。"
+            ]
+          }
+        }
+      },
+      "story-tool": {
+        "id": "story-tool",
+        "parent": "story-u",
+        "children": [
+          "story-a"
+        ],
+        "message": {
+          "id": "story-tool",
+          "author": {
+            "role": "tool"
+          },
+          "create_time": "2025-08-02T08:00:01Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "纯虚构工具输出。"
+            ]
+          }
+        }
+      },
+      "story-a": {
+        "id": "story-a",
+        "parent": "story-tool",
+        "children": [],
+        "message": {
+          "id": "story-a",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-08-02T08:01:00Z",
+          "status": "finished_successfully",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "小说主角收拾好行囊。"
+            ]
+          }
+        }
+      }
+    },
+    "current_node": "story-a"
+  }
+]
