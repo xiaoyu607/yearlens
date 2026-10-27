@@ -10,7 +10,7 @@
 
 ## 开发和验证
 
-使用 Python 3.10+，CLI 不需要第三方依赖。创建自己的分支，在项目根目录运行：
+使用仍受官方安全维护的 Python 3.11 或更新版本，CLI 不需要第三方依赖。实际验证范围见 [README](README.md#快速运行)；支持范围声明不代表每个版本和操作系统均已测试。创建自己的分支，在项目根目录运行：
 
 ```bash
 python3 -m unittest discover -s tests -v

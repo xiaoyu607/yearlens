@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "project_id": "XY-SKILL-001",
+  "skill_name": "yearlens",
+  "version": "0.2.0",
+  "repository": "https://github.com/xiaoyu607/yearlens",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/analysis_rules.md",
+    "references/data_contract.md",
+    "references/report_check.md",
+    "release.json",
+    "scripts/analyze_stats.py",
+    "scripts/build_timeline.py",
+    "scripts/check_report.py",
+    "scripts/common.py",
+    "scripts/parse_chat.py",
+    "scripts/yearlens.py"
+  ]
+}
