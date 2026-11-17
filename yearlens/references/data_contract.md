@@ -4,7 +4,7 @@
 
 接受 conversations.json 的顶层会话数组或 `{"conversations": [...]}`。会话使用 `mapping` 节点图、`current_node`、可选 `id` / `conversation_id` 和 `title`。这是对提供的数据形状的支持，不保证未来导出格式不变。未知顶层格式或损坏节点会报错，不生成伪成功的零值报告。
 
-仅 `message.author.role` 为 user/assistant 的可见消息进入统计，系统/工具/其他角色计入诊断后排除。仅抽取 `content.parts` 的字符串，不将附件字典或图片标识转成用户文本。无文本的消息计入消息数，但没有月度原文线索。附件内容不读取，语音有字符串转录时按文本处理。
+仅 `message.author.role` 为 user/assistant 的可见消息进入统计，系统/工具/其他角色计入诊断后排除。仅抽取 `content.parts` 的字符串，按原顺序用换行拼接为 normalized 文本；拼接换行不一定存在于任一单独片段中。不将附件字典或图片标识转成用户文本。无文本的消息计入消息数，但没有月度原文线索。附件内容不读取，语音有字符串转录时按文本处理。
 
 隐藏消息（metadata.is_visually_hidden_from_conversation=true）、助手 analysis 通道、助手发给工具的调用（recipient 既不是 all 也不是空）、未完成的助手消息（存在非 finished_successfully 的 status）排除。字符数为提取文本的 Python len，包括空白和标点；不是中文词数、字数或 token 估计。
 

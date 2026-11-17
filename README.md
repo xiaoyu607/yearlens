@@ -59,10 +59,15 @@ The `yearlens/` directory is a self-contained Skill. Copy it into the skill loca
 - 只支持已知节点图JSON数组及 conversations 包装；不支持ZIP、纯文本、流式读取或附件内容。整个输入载入内存。 / Supports known node-graph JSON arrays and the conversations wrapper, not ZIPs, plain text, streaming or attachment contents. The input is loaded into memory.
 - 以消息日期筛年，默认当前分支；按来源去重，不按文字去重。 / Filters by message date and current branch; deduplicates sources, not repeated text.
 - 用户原文仅为线索，聊天日期不等于事件日期，助手建议不等于用户行动。 / User excerpts are leads; chat dates are not event dates, and assistant advice is not user action.
+- 多个字符串片段会用换行拼接后再摘录，逐字引用请核对原始片段。 / Multiple string parts are joined with newlines before excerpting; check the original parts for verbatim quotations.
 - 不自动获取账号历史，不做自动脱敏、心理诊断、深度人生分析或交互网页。 / No automatic account-history access, redaction, psychological diagnosis, deep life analysis or interactive website.
 - 原始输入和所有报告默认私密；分享须另存独立副本并审阅。Python流程不联网，把摘录交给AI仍会让其进入模型会话。 / Inputs and reports are private. Review a separate copy before sharing. Python processing is local; excerpts given to an AI enter that model conversation.
 
 详见[数据约定](yearlens/references/data_contract.md)和[分析规则](yearlens/references/analysis_rules.md)。See the data contract and analysis rules for exact semantics. Future analysis and web features remain unimplemented; v0.2.0 adds validation tooling rather than those features.
+
+分支选择和歧义处理的虚构命令示例见 [分支验收 / branch review](examples/branch-review.md)。
+
+See [branch review](examples/branch-review.md) for synthetic examples of branch selection and ambiguity.
 
 ## 验证与贡献 / Tests and contributions
 

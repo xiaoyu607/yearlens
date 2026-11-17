@@ -1,5 +1,10 @@
 # 变更记录 / Changelog
 
+## 未发布 / Unreleased
+
+- 澄清多片段文本以换行拼接后的摘录与逐字引用边界；增加虚构分支选择和歧义验收示例。Clarify multi-part excerpts and verbatim quotation; add synthetic branch-selection and ambiguity examples.
+- 仅文档与示例，处理逻辑未更改；真实导出兼容性仍未验证。Documentation and examples only; processing is unchanged and real-export compatibility remains unverified.
+
 ## v0.2.0 — 2026-10-27
 
 公开预览版 / Public preview.

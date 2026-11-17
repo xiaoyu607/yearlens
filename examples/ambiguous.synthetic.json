@@ -1,0 +1,57 @@
+[
+  {
+    "id": "synthetic-branches",
+    "title": "虚构分支练习",
+    "current_node": null,
+    "mapping": {
+      "u": {
+        "parent": null,
+        "message": {
+          "id": "u",
+          "author": {
+            "role": "user"
+          },
+          "create_time": "2025-06-01T00:00:00Z",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "虚构问题"
+            ]
+          }
+        }
+      },
+      "a": {
+        "parent": "u",
+        "message": {
+          "id": "a",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-06-01T00:00:00Z",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "虚构旧答案"
+            ]
+          }
+        }
+      },
+      "b": {
+        "parent": "u",
+        "message": {
+          "id": "b",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": "2025-06-01T00:00:00Z",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "虚构当前答案"
+            ]
+          }
+        }
+      }
+    }
+  }
+]
