@@ -14,16 +14,18 @@ Use a currently security-maintained Python 3.11 or newer. Both commands use only
 
 ## 快速运行 / Quick start
 
-在项目根目录运行。输出目录必须不存在，选择源码目录之外的新私密目录。下面的 `/tmp` 仅用于虚构演示。
+在项目根目录运行。每次 `mktemp` 创建一个新的私密临时父目录，YearLens 在其中创建尚不存在的 `report` 子目录，避免覆盖旧结果。下面仅用于虚构演示；真实报告应使用你选择的私密位置，临时文件可能被系统清理。
 
-Run from the project root, selecting a new private output directory outside this repository. It must not already exist. `/tmp` below is for the synthetic demonstration only.
+Run from the project root. Each `mktemp` call creates a new private temporary parent; YearLens creates its previously nonexistent `report` child, preserving earlier results. This is for synthetic data only; choose your own private location for real reports, as temporary files may be cleared by the system.
 
 ```bash
+task_demo_dir=$(mktemp -d "${TMPDIR:-/tmp}/yearlens-demo.XXXXXX")
 python3 yearlens/scripts/yearlens.py examples/conversations.synthetic.json \
-  --year 2025 --timezone Asia/Bangkok --output /tmp/yearlens-v020-synthetic
+  --year 2025 --timezone Asia/Bangkok --output "$task_demo_dir/report"
 python3 yearlens/scripts/check_report.py \
-  --report-dir /tmp/yearlens-v020-synthetic \
+  --report-dir "$task_demo_dir/report" \
   --expect-year 2025 --expect-timezone Asia/Bangkok --expect-branches current
+printf 'Report: %s\n' "$task_demo_dir/report/report.md"
 ```
 
 生成 `report.md`、`normalized.json`、`stats.json`、`timeline.json` 和 `audit.json`，样例为15条消息（8条用户、7条助手）和7条原文线索。先阅读数据质量说明，再核对日期与摘录。
